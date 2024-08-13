@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <body>
+            <legend>Register here</legend>
+            <form action="./form.txt">
+            <pre>
+            <div style="background-color: black ;">
+            <label>Enter name:--</label>
+            <input type="text"placeholder="Enter name here"pattern="[A-Z a-z 0-9]{4,}"required>
+        </div>
+        <div style="background-color: red;">
+        <label for="pswd">Enter password:--</label>
+        <input type="password" placeholder="Enter password here"id="pswd"pattern="[A-Z a-z!@#$%^&* 0-9]{8,}"required>
+       </div>
+       <div style="background-color: yellow;">
+        <label for="email">Enter Email:-</label>
+        <input type="email"placeholder="Enter Email"id="email"pattern="[a-z._0-9]+@[a-z]+\.[a-z]{0,9}"required>
+       </div>
+       <div style="background-color: blueviolet;">
+        <label for="enter course">Enter your course:--</label>
+        <select name="course" id="enter course" style="width:170px;">
+            <option>choose from below</option>
+                          
+            <option value="CSE" selected>CSE</option>
+            <option value="EEE"disabled >EEE</option>
+            <option value="ECE" >ECE</option>
+        </select >
+       </div>
+
+       <div style="background-color: chocolate;">
+       <input type="text" list="timings"/>
+       <datalist id="timings">
+        <option value="8:30-9:30">8:30-9:30 </option>
+        <option value="10:30-11:30">10:30-11:30</option>
+        <option value="12:30-1:30">12:30-1:30</option>
+        </datalist>
+        </div>
+
+       <div style="background-color: white;">
+        <input type= "file"/>
+        </div>
+
+       <div style="background-color: darkorange;" >
+
+        male:--<input type="radio"id="male"name="gender"value="male"required>
+        female:--<input type="radio"id="female"name="gender"value="female"required>
+        others:--<input type="radio"id="others"name="gender"value="others"required>
+       </div>
+
+       <input type="checkbox">I agree to the <a href="">Terms</a>and <a href="">conditions</a>
+
+        <textarea rows="8"cols="40" read only>
+                  Samyuktha
+                  2-20/1
+                  505001
+                  telangana
+                  karimnagar
+
+        </textarea>
+        
+        <button type="submit">submit</button>
+ 
+
+
+       
+
+
+
+            </pre>
+        </form>
+        </body>
+    </head>
+</html>
